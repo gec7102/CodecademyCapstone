@@ -1,0 +1,82 @@
+/*UNIVERSAL STYLES*/
+html, body {
+  font-size: 16px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /*align-items: flex-start;*/
+}
+
+/*while in desktop mode, the
+mobile pieces are invisible*/
+.mobile {
+  display: none;
+}
+
+
+/*HEADER*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  padding: 0 1.5rem;
+}
+
+header {
+  font-size: 2rem;
+  /*font-family: INSERT HERE;*/
+}
+
+.title {
+  height: 2rem;
+}
+
+.title .part1 {
+  /*text color dark gray*/
+}
+
+.title .part2 {
+  /*text color light gray*/
+}
+
+nav ul li {
+  display: inline;
+  padding-left: 1rem;
+}
+
+
+
+
+/*BANNER*/
+
+.banner {
+  display: flex;
+  align-items: center;
+}
+
+.banner img {
+  width: 60%;
+  padding: 2rem 1.5rem;
+}
+
+.banner .content {
+  width: 40%;
+  margin-left: -0.75rem;
+  align-items: flex-start;
+}
+
+.banner .content .button {
+  background-color: darkgray;
+  padding: 0.5rem 0;
+  /*width: 100%;*/
+}
+
+
+/*ARTICLES & EVENTS*/
+.events {
+  width: 40%;
+}
