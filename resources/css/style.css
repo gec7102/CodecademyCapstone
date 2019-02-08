@@ -7,14 +7,10 @@ html, body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  /*align-items: flex-start;*/
+  align-items: center;
 }
 
-/*while in desktop mode, the
-mobile pieces are invisible*/
-.mobile {
-  display: none;
-}
+
 
 
 /*HEADER*/
@@ -48,7 +44,11 @@ nav ul li {
   padding-left: 1rem;
 }
 
-
+/*while in desktop mode, the
+mobile header is invisible*/
+.mobile {
+  display: none;
+}
 
 
 /*BANNER*/
@@ -77,6 +77,75 @@ nav ul li {
 
 
 /*ARTICLES & EVENTS*/
-.events {
+
+/*Articles*/
+
+.articles-events {
+  display: flex;
+  width: 100%;
+}
+
+.articles {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 60%;
+}
+
+.keep-practicing {
+  padding: 2rem 1.5rem;
+}
+
+.keep-practicing img {
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.keep-practicing h2 {
+  margin-bottom: 1.5rem;
+}
+
+
+/*Events*/
+
+/*events that are also
+mobile are invisible*/
+.event.mobile {
+  display: none;
+}
+
+.all-events {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 1rem;
   width: 40%;
+}
+
+.event-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.event {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+
+.event img {
+  width: 35%;
+}
+
+
+
+.event .content {
+  width: 65%;
+  padding-left: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
 }
